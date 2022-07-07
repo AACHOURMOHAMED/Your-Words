@@ -23,11 +23,11 @@ To get a local copy of this project:
 
 Clone this repository or download the Zip folder:
 ```
-https://github.com/AACHOURMOHAMED/TodoList_JavaScript.git
+
 ``` 
 
 ## Live demo
-https://aachourmohamed.github.io/TodoList_JavaScript/
+https://62c6f40fe11ccf300ea126c7--velvety-marshmallow-b6ba14.netlify.app/
 
 ## Test
 To track linter errors locally follow these steps:  
