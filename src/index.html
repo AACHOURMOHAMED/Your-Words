@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Words</title>
+    <link href="style.scss">
+  </head>
+  <body>
+    <!--Header section-->
+    <header id="Header">
+      <div class="container">
+        <div class="HeaderContent">
+          <nav id="nav">
+            <!--logo-->
+            <a href="#" class="logo" >Yourwords</a>
+            <!--****************-->
+            <ul class="navItems"><!--Nav Items-->
+              <li class="item">Home</li>
+              <li class="item">Words</li>
+              <li class="item">Libary</li>
+              <li class="item">Tests</li>
+            </ul>
+            <!--****************-->
+            <select class="dropdown"><!--dropdown part-->
+              <option class="lang english">
+                <img
+                  src="images/icons8-great-britain-96.svg"
+                  alt="English flag"
+                />
+                <span>English</span>
+              </option>
+              <option class="lang english">
+                <img
+                  src="images/icons8-great-britain-96.svg"
+                  alt="English flag"
+                />
+                <span>French</span>
+              </option>
+              <option class="lang english">
+                <i><img
+                  src="images/icons8-great-britain-96.svg"
+                  alt="English flag"
+                /></i>
+                
+                <span>Arabic</span>
+              </option>
+            </select>
+            <!--****************-->
+            <!--Background color-->
+            <div class="F-back">
+              <input type="color" id="backcolor">  
+            </div>
+            
+            <!--End of Background color-->
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--End of Header section-->
+    <!--Home section-->
+    <section id="Home"></section>
+    <!--End of Home section-->
+    <!--Words section-->
+    <section id="Words"></section>
+    <!--End of Words section-->
+    <!--Libary section-->
+    <section id="Libary"></section>
+    <!--End of Libary section-->
+    <!--Tests section-->
+    <section id="Tests"></section>
+    <!--End of Tests section-->
+  </body>
 </html>
