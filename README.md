@@ -27,7 +27,7 @@ Clone this repository or download the Zip folder:
 ``` 
 
 ## Live demo
-https://62c6f40fe11ccf300ea126c7--velvety-marshmallow-b6ba14.netlify.app/
+https://velvety-marshmallow-b6ba14.netlify.app/
 
 ## Test
 To track linter errors locally follow these steps:  
