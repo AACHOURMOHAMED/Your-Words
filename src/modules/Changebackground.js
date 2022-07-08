@@ -3,11 +3,11 @@ const body = document.querySelector('body');
 const changeBackground = () => {
   backcolor.addEventListener('change', () => {
     body.style.backgroundColor = backcolor.value;
-    localStorage.setItem('color', backcolor.value);
+    window.localStorage.setItem('color', backcolor.value);
   });
-  const color = localStorage.key(1);
-  body.style.backgroundColor = localStorage.getItem(color);
-  backcolor.value = localStorage.getItem(color);
+  const color = window.localStorage.key(backcolor);
+  body.style.backgroundColor = window.localStorage.getItem(color);
+  backcolor.value = window.localStorage.getItem(color);
 };
 
 export default changeBackground;
