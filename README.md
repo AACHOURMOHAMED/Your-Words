@@ -69,10 +69,6 @@ Feel free to check the [issues page](https://github.com/AACHOURMOHAMED/awesome-b
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- This project is part of week 1 of module 2 in the Microverse study program.
-
 
 ## 📝 License
 
