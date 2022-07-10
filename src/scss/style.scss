@@ -143,34 +143,69 @@ body {
       }
 
       .inputsFeild {
+        position: relative;
         display: flex;
         flex-direction: column;
         gap: 30px;
         width: 737px;
-
+        
         .Input {
           width: 100%;
-
-          span {
+          position: relative;
+          #text1:focus  , .text11 {
+            top: -1.22rem;
+            font-size: 0.8rem;
+            left: 0;
+          }
+          label {
             position: absolute;
-            margin-top: 18px;
-            margin-left: 10px;
+            color: $sec_color;
+            top: 1.2rem;
+            left: 1.5rem;
+            cursor: text;
+            transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+
           }
 
           input {
             width: 100%;
             padding: 20px;
             background-color: #fefefe;
-            border: 1px solid #e1e1e1;
+            border: 2px solid #e1e1e1;
             border-radius: 8px;
+            outline: none;
+
+            &:hover {
+              border-color: #015cb5;
+            }
+
+            &:focus {
+              border-color: #015cb5;
+            }
+          }
+
+          textarea:focus  , .text11 {
+            top: -1.22rem;
+            font-size: 0.8rem;
+            left: 0;
           }
 
           textarea {
             width: 100%;
             resize: none;
+            padding: 20px;
             background-color: #fefefe;
-            border: 1px solid #e1e1e1;
+            border: 2px solid #e1e1e1;
             border-radius: 8px;
+            outline: none;
+
+            &:hover {
+              border-color: #015cb5;
+            }
+
+            &:focus {
+              border-color: #015cb5;
+            }
           }
         }
 

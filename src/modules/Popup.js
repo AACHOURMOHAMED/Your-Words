@@ -17,18 +17,18 @@ const Popup = () => {
     const inputFeild = document.createElement('div');
     inputFeild.className = 'inputsFeild';
     inputFeild.innerHTML = (`
+        <form class="Input">
+            <label class='text11' for='text1'>Enter your word</label>
+            <input type='text'  class='textWord text' id='text1'>
+        </form>
         <div class="Input">
-            <span>Enter your word</span>
-            <input type='text'  class='textWord text' >
-        </div>
-        <div class="Input">
-            <span>Enter your word</span>
+        <label class='text11'>Enter your description (optional)</label>
             <textarea name="description" class="Description" cols="30" rows="10"></textarea>
         </div>
-        <div class="Input">
-            <span>Enter your word</span>
+        <form class="Input">
+            <label class='text11'>Enter the translate</label>
             <input type='text'  class='textTranslate text' >
-        </div>
+        </form>
     `);
     AddContent.appendChild(inputFeild);
     const buttons = document.createElement('div');
