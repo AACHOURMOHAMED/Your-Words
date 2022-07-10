@@ -148,15 +148,18 @@ body {
         flex-direction: column;
         gap: 30px;
         width: 737px;
-        
+
         .Input {
           width: 100%;
           position: relative;
-          #text1:focus  , .text11 {
+
+          #text1:focus,
+          .text11 {
             top: -1.22rem;
             font-size: 0.8rem;
             left: 0;
           }
+
           label {
             position: absolute;
             color: $sec_color;
@@ -164,7 +167,6 @@ body {
             left: 1.5rem;
             cursor: text;
             transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-
           }
 
           input {
@@ -184,12 +186,6 @@ body {
             }
           }
 
-          textarea:focus  , .text11 {
-            top: -1.22rem;
-            font-size: 0.8rem;
-            left: 0;
-          }
-
           textarea {
             width: 100%;
             resize: none;
@@ -206,6 +202,13 @@ body {
             &:focus {
               border-color: #015cb5;
             }
+          }
+
+          textarea:focus,
+          .text11 {
+            top: -1.22rem;
+            font-size: 0.8rem;
+            left: 0;
           }
         }
 
