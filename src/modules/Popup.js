@@ -17,30 +17,30 @@ const Popup = () => {
     const inputFeild = document.createElement('div');
     inputFeild.className = 'inputsFeild';
     inputFeild.innerHTML = (`
-        <form class="Input">
+        <div class="Input">
             <label class='text11' for='text1'>Enter your word</label>
-            <input type='text'  class='textWord text' id='text1'>
-        </form>
+            <input type='text'  class='textWord text' id='text1' autocomplete='off'>
+        </div>
         <div class="Input">
         <label class='text11'>Enter your description (optional)</label>
             <textarea name="description" class="Description" cols="30" rows="10"></textarea>
         </div>
-        <form class="Input">
+        <div class="Input">
             <label class='text11'>Enter the translate</label>
             <input type='text'  class='textTranslate text' >
-        </form>
+        </div>
     `);
     AddContent.appendChild(inputFeild);
     const buttons = document.createElement('div');
     buttons.className = 'buttons';
     inputFeild.appendChild(buttons);
     const btnAdd = document.createElement('button');
-    btnAdd.classList.add('btnAddpop');
+    btnAdd.className = 'btnAddpop';
     btnAdd.type = 'button';
     btnAdd.textContent = 'Add';
     buttons.appendChild(btnAdd);
     const btnCancle = document.createElement('button');
-    btnCancle.classList.add('btnAddpop');
+    btnCancle.classList.add('Cancle');
     btnCancle.type = 'button';
     btnCancle.textContent = 'Cancle';
     buttons.appendChild(btnCancle);
