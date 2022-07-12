@@ -1,9 +1,8 @@
-const Added = document.querySelector('.btnAddpop');
-const AddWord = () => {
-  Added.addEventListener('submit', () => {
-    alert('hello');
-    console.log('hello');
-  });
+import AddToArray from './AddToArray.js';
+
+const AddWord = (data) => {
+  alert('hello');
+  AddToArray(data);
 };
 
 export default AddWord;
