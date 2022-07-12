@@ -1,7 +1,9 @@
+import AddWord from './AddWord.js';
+
 const btn = document.querySelector('.back');
 const popup = document.getElementById('popup');
 
-const Popup = () => {
+const Popup = (data, AddToArray) => {
   btn.addEventListener('click', () => {
     popup.classList.remove('active');
     const back = document.createElement('div');
@@ -36,8 +38,10 @@ const Popup = () => {
     inputFeild.appendChild(buttons);
     const btnAdd = document.createElement('button');
     btnAdd.className = 'btnAddpop';
+    btnAdd.id = 'Add';
     btnAdd.type = 'button';
     btnAdd.textContent = 'Add';
+    btnAdd.onclick = AddWord;
     buttons.appendChild(btnAdd);
     const btnCancle = document.createElement('button');
     btnCancle.classList.add('Cancle');
