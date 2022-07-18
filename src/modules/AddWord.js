@@ -1,8 +1,10 @@
 import AddToArray from './AddToArray.js';
+import { data } from './Data.js';
 
-const AddWord = (data) => {
-  alert('hello');
+const AddWord = () => {
+  alert('hlelo');
   AddToArray(data);
+  console.log(data);
 };
 
 export default AddWord;
