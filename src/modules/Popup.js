@@ -3,7 +3,7 @@ import AddWord from './AddWord.js';
 const btn = document.querySelector('.back');
 const popup = document.getElementById('popup');
 
-const Popup = (data, AddToArray) => {
+const Popup = () => {
   btn.addEventListener('click', () => {
     popup.classList.remove('active');
     const back = document.createElement('div');
