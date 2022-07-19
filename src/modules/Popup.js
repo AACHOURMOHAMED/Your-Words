@@ -21,15 +21,15 @@ const Popup = () => {
     inputFeild.innerHTML = (`
         <div class="Input">
             <label class='text11' for='text1'>Enter your word</label>
-            <input type='text'  class='textWord text' id='text1' autocomplete='off'>
+            <input type='text' id='textWord' class='textWord text' id='text1' autocomplete='off'>
         </div>
         <div class="Input">
         <label class='text11'>Enter your description (optional)</label>
-            <textarea name="description" class="Description" cols="30" rows="10"></textarea>
+            <textarea  name="description" id="Description" class="Description" cols="30" rows="10"></textarea>
         </div>
         <div class="Input">
             <label class='text11'>Enter the translate</label>
-            <input type='text'  class='textTranslate text' >
+            <input  type='text' id='textTranslate'  class='textTranslate text' >
         </div>
     `);
     AddContent.appendChild(inputFeild);
@@ -41,8 +41,16 @@ const Popup = () => {
     btnAdd.id = 'Add';
     btnAdd.type = 'button';
     btnAdd.textContent = 'Add';
-    btnAdd.onclick = AddWord;
     buttons.appendChild(btnAdd);
+    const wordInput = document.querySelector('.textWord');
+    const descriptionInput = document.querySelector('.Description');
+    const translateInput = document.querySelector('.textTranslate');
+    btnAdd.addEventListener('click', () => {
+      AddWord(wordInput.value, descriptionInput.value, translateInput.value);
+      wordInput.value = '';
+      descriptionInput.value = '';
+      translateInput.value = '';
+    });
     const btnCancle = document.createElement('button');
     btnCancle.classList.add('Cancle');
     btnCancle.type = 'button';
