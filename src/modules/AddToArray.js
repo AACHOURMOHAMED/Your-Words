@@ -1,12 +1,14 @@
 import { data } from './Data.js';
 
-const AddToArray = () => {
+const AddToArray = (wordInput, descriptionInput, translateInput) => {
   const tasks = [{
-    word: 'hello',
-    description: 'helloit',
-    translate: 'helloooo',
+    id: Date.now(),
+    word: wordInput,
+    description: descriptionInput,
+    translate: translateInput,
   }];
   data.push(tasks);
+  console.log(data);
 };
 
 export default AddToArray;
