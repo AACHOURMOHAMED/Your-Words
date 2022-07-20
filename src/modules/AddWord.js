@@ -4,7 +4,8 @@ const AddWord = (wordInput, descriptionInput, translateInput) => {
   if (wordInput !== '' && translateInput !== '') {
     AddToArray(wordInput, descriptionInput, translateInput);
   } else {
-    alert('no');
+    console.log(wordInput);
+    alert('it empty');
   }
 };
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Words</title>
-    <link href="style.scss">
+    <link href="style.scss" />
   </head>
   <body>
     <!--Header section-->
@@ -14,36 +14,34 @@
         <div class="HeaderContent">
           <nav id="nav">
             <!--logo-->
-            <a href="index.html" class="logo" >Yourwords</a>
+            <a href="index.html" class="logo">Yourwords</a>
             <!--****************-->
-            <ul class="navItems"><!--Nav Items-->
+            <ul class="navItems">
+              <!--Nav Items-->
               <li class="item 1">Home</li>
               <li class="item 2">Words</li>
               <li class="item 3">Libary</li>
               <li class="item 4">Tests</li>
             </ul>
             <!--****************-->
-            <select class="dropdown"><!--dropdown part-->
+            <select class="dropdown">
+              <!--dropdown part-->
               <option class="lang english">
-              
                 <span>English</span>
               </option>
               <option class="lang english">
-                
                 <span>French</span>
               </option>
               <option class="lang english">
-                
-                
                 <span>Arabic</span>
               </option>
             </select>
             <!--****************-->
             <!--Background color-->
             <div class="F-back">
-              <input type="color" id="backcolor">  
+              <input type="color" id="backcolor" />
             </div>
-            
+
             <!--End of Background color-->
           </nav>
         </div>
@@ -51,42 +49,83 @@
     </header>
     <!--End of Header section-->
     <div class="AddWord container">
-        <div class="back">
-         <svg xmlns="http://www.w3.org/2000/svg" width="30.849" height="30.849" viewBox="0 0 30.849 30.849">
-            <path id="Icon_metro-plus" data-name="Icon metro-plus" d="M32.455,13.5h-10.6V2.892a.964.964,0,0,0-.964-.964H15.1a.964.964,0,0,0-.964.964V13.5H3.535a.964.964,0,0,0-.964.964v5.784a.964.964,0,0,0,.964.964h10.6v10.6a.964.964,0,0,0,.964.964h5.784a.964.964,0,0,0,.964-.964v-10.6h10.6a.964.964,0,0,0,.964-.964V14.46A.964.964,0,0,0,32.455,13.5Z" transform="translate(-2.571 -1.928)" fill="#015cb5"/>
-        </svg>   
-        </div>
-        
+      <div class="back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30.849"
+          height="30.849"
+          viewBox="0 0 30.849 30.849"
+        >
+          <path
+            id="Icon_metro-plus"
+            data-name="Icon metro-plus"
+            d="M32.455,13.5h-10.6V2.892a.964.964,0,0,0-.964-.964H15.1a.964.964,0,0,0-.964.964V13.5H3.535a.964.964,0,0,0-.964.964v5.784a.964.964,0,0,0,.964.964h10.6v10.6a.964.964,0,0,0,.964.964h5.784a.964.964,0,0,0,.964-.964v-10.6h10.6a.964.964,0,0,0,.964-.964V14.46A.964.964,0,0,0,32.455,13.5Z"
+            transform="translate(-2.571 -1.928)"
+            fill="#015cb5"
+          />
+        </svg>
+      </div>
     </div>
     <!--popup section-->
-    <section id="popup"></section>
+    <section id="popup">
+      <div class="popupBack">
+        <div class="AddContent">
+          <h2 class="title">Add Word</h2>
+          <div class="inputsFeild">
+            <div class="Input">
+              <label class="text11" for="text1">Enter your word</label>
+              <input
+                type="text"
+                id="textWord"
+                class="textWord text"
+                autocomplete="off"
+              />
+            </div>
+            <div class="Input">
+              <label class="text11">Enter your description (optional)</label>
+              <textarea
+                name="description"
+                id="Description"
+                class="Description"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="Input">
+              <label class="text11">Enter the translate</label>
+              <input
+                type="text"
+                id="textTranslate"
+                class="textTranslate text"
+              />
+            </div>
+            <div id="buttons" class="buttons">
+              <button class="btnAddpop">Add</button>
+              <button class="Cancle">Cancle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--End of popup section-->
     <!--Home section-->
     <section id="Home">
-        <div class="container">
-            Home
-        </div>
+      <div class="container">Home</div>
     </section>
     <!--End of Home section-->
     <!--Words section-->
     <section id="Words">
-        <div class="container">
-            Words
-        </div>
+      <div class="container">Words</div>
     </section>
     <!--End of Words section-->
     <!--Libary section-->
     <section id="Libary">
-        <div class="container">
-            Libary
-        </div>
+      <div class="container">Libary</div>
     </section>
     <!--End of Libary section-->
     <!--Tests section-->
     <section id="Tests">
-        <div class="container">
-            Tests
-        </div>
+      <div class="container">Tests</div>
     </section>
     <!--End of Tests section-->
   </body>
